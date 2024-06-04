@@ -3,57 +3,87 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Bestie</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
     <div class="bg-warning p-1"></div> <!--가장 위 노란 선-->
     
-    <div class="mb-1 text-end"> <!--로그인, 회원가입-->
-      <button class="btn btn-sm">로그인</button>
-      <button class="btn btn-sm">회원가입</button>
-    </div>
-    
-    <div class="bg-warning p-1 d-flex justify-content-between align-items-center"> <!--네비게이션-->
-      <span class="text-light" id="title-font">Bestie</span> <!--제목-->
-      <div class="d-flex justify-content-start">
-        <span class="fs-3 mx-3 text-light">동물알기</span>
-        <span class="fs-3 mx-3 text-light">소통공간</span>
-        <span class="fs-3 mx-3 text-light">홍보</span>
-        <span class="fs-3 mx-3 text-light">입양</span>
+    <section><!--로그인, 회원가입-->
+      <div class="mb-1 text-end mt-1"> 
+        <button class="btn btn-sm"><a href="login.html">로그인</a></button>
+        <button class="btn btn-sm"><a href="logup.html">회원가입</a></button>
       </div>
-    </div>
-    <section><!--동물 알기 섹션-->
+    </section>
+    
+    <section class="border"><!--네비게이션-->
+      <div class="bg-warning p-1 d-flex justify-content-between align-items-center"> 
+        <span class="text-light" id="title-font">Bestie</span> <!--제목-->
+
+        <div class="d-flex justify-content-start">
+          <ul class="nav">
+            <li><div class="nav fs-3 mx-4 text-light dropdown-toggle" data-bs-toggle="dropdown"><a href="dog_info.html">동물알기</a></div>
+              <ul class="dropdown-menu">
+                <li class="fs-6 dropdown-item"><a href="dog_info.html">강아지 소개</a></li>
+                <li class="fs-6 dropdown-item"><a href="cat_info.html">고양이 소개</a></li>
+                <li class="fs-6 dropdown-item"><a href="ets_info.html">그 외 소개</a></li>
+              </ul>
+            </li>
+            <li><div class="nav"><ul class="fs-3 mx-3 text-light dropdown-toggle" data-bs-toggle="dropdown"><a>소통공간</a></div>
+              <ul class="dropdown-menu">
+                <li class="fs-6 dropdown-item">전체 공간</li>
+                <li class="fs-6 dropdown-item">강아지 공간</li>
+                <li class="fs-6 dropdown-item">고양이 공간</li>
+                <li class="fs-6 dropdown-item">그 외 공간</li>
+              </ul>
+            </li>
+            <li><div class="nav"><ul class="fs-3 mx-3 text-light"><a>홍보</a></div></li>
+            <li><div class="nav"><ul class="fs-3 mx-3 text-light dropdown-toggle" data-bs-toggle="dropdown"><a>입양</a></div>
+              <ul class="dropdown-menu">
+                <li class="fs-6 dropdown-item">절차 안내</li>
+                <li class="fs-6 dropdown-item">보호 동물</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="width"><!--동물 알기 섹션-->
       <div class="my-4">
         <span class="fs-3">동물알기</span><span>반려동물에 관한 정보를 알아보세요.</span>
       </div>
       <div class="container">
         <div class="row g-3">
           <div class="col-4">
-            <img src="images/dog-info.png" class="img-fluid rounded-4 border border-warning" alt="강아지 이미지">
+            <img src="images/dog-info.png" class="img-fluid rounded-4 border border-warning border-3 info_img_height" alt="강아지 이미지">
+            <span class="bg-warning rounded-5 info_dog_button"><a href="dog_info.html">강아지 소개</a></span>
           </div>
           <div class="col-4">
-            <img src="images/cat-info.png" class="img-fluid  rounded-4" alt="고양이 이미지">
+            <img src="images/cat-info.png" class="img-fluid  rounded-4 border border-warning border-3 info_img_height" alt="고양이 이미지">
+            <span class="bg-warning rounded-5 info_dog_button"><a href="cat_info.html">고양이 소개</a></span>
           </div>
           <div class="col-4">
-            <img src="images/info.png" class="img-fluid rounded-4" alt="그 외 이미지">
+            <img src="images/info.png" class="img-fluid rounded-4 border border-warning border-3 info_img_height" alt="그 외 이미지">
+            <span class="bg-warning rounded-5 info_dog_button"><a href="ets_info.html">그 외 소개</a></span>
           </div>
         </div>
       </div>
     </section>
 
-    <section>
+    <section class="width"><!--소통공간 섹션-->
       <div class="my-4">
         <span class="fs-3">소통공간</span><span>반려동물과의 추억을 공유하세요.</span>
         <div class="container">
           <div><!--첫번째 글-->
-            <img src="images/kong.png" class="img-fluid rounded-4 col-4 row-4" style="height: 400px;" alt="첫번째 글 이미지">
+            <img src="images/kong.png" class="img-fluid rounded-4 col-4" style="height: 400px;" alt="첫번째 글 이미지">
             <span class="border border-warning">
-              <img src="" class="" alt="첫번째 프로필 이미지">
+              <img src="images/kong_pro.png" class="col-1 rounded-5 border" alt="첫번째 프로필 이미지">
               <span>콩이</span><span>@kong_sun</span>
-              <div>오늘 산책 완료! 오산완~</div>
-              <div>#오산완 #산책 #콩이 #신남</div>
+              <span>오늘 산책 완료! 오산완~</span>
+              <span>#오산완 #산책 #콩이 #신남</span>
               <button>글 보러가기</button>
             </span>
           </div>
@@ -62,10 +92,10 @@
             <div>
               <img src="images/cherry.png" class="img-fluid rounded-4 col-4" style="height: 400px;" alt="두번째 글 이미지">
               <span class="border border-warning">
-              <img src="" class="" alt="두번째 프로필 이미지">
+              <img src="" class="col-1 rounded-5 border" alt="두번째 프로필 이미지">
               <span>체리</span><span>@cherry</span>
-              <div>Zzz</div>
-              <div>#자니 #꿀잠 #강아지 #요크셔</div>
+              <span>Zzz</span>
+              <span>#자니 #꿀잠 #강아지 #요크셔</span>
               <button>글 보러가기</button>
             </div>
           </div>
@@ -73,14 +103,54 @@
       </div>
     </section>
 
-    <section><!--홍보-->
+    <section class="width"><!--홍보-->
       <div class="my-4">
         <span class="fs-3">홍보</span><span>반려동물을 위한 행사를 확인하세요.</span>
-        <button></button>
-        <img>
-        <button></button>
+        <div class="d-flex justify-content-center">
+          <button><span>넘어가기</span></button>
+          <img src="images/aver1.png" class="col-7">
+          <button></button>
+        </div>
       </div>
     </section>
+    
+    <section class="width"><!--입양섹션-->
+      <div class="my-4">
+        <span class="fs-3">입양</span><span>동물의 가족이 되어주세요.</span>
+        <div class="container">
+          <div class="row g-3">
+            <div class="col-3">
+              <img src="images/adop_dog.png" class="img-fluid rounded-4" alt="입양 강아지 이미지">
+            </div>
+            <div class="col-3">
+              <img src="images/adop_cat.png" class="img-fluid  rounded-4" alt="입양 고양이 이미지">
+            </div>
+            <div class="col-3">
+              <img src="images/adop_rab.png" class="img-fluid rounded-4" alt="입양 토끼 이미지">
+            </div>
+            <div class="col-3">
+              <img src="images/adop_bir.png" class="img-fluid rounded-4" alt="입양 새 이미지">
+            </div>
+          </div>
+        </div>
+        <button class="bg-warning">더 많은 동물 보러가기</button>
+      </div>
+    </sectoin>
+
+    <section class="width"><!--출처 섹션-->
+      <div>
+        이미지 저작권:<br>
+        Pixabay (동물 이미지)
+        친구들 반려동물 사진 (소통공간 동물 이미지)<br>
+        참고 사이트:<br>
+        서울 동물 복지 지원 센터 (https://animal.seoul.go.kr/index)<br>
+        동물 자유 연대 (https://animals.or.kr/center/adopt)<br>
+        국립 축산 과학원 (https://www.nias.go.kr/companion/index.do)<br>
+        용인 특례시 동물 보호 센터 (https://www.yongin.go.kr/pet/index.do)
+      </div>
+    </section>
+
+  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>

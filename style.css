@@ -6,3 +6,27 @@
 #title-font{
     font-size: 50px;
 }
+
+.width{
+    width: 1300px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+.info_img_height{
+    height: 400px;
+}
+
+.info_dog_button{
+    /*위로 올리기*/
+    margin: 0px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.border{ /*나중에 지움*/
+    border: 1px solid black;
+}
