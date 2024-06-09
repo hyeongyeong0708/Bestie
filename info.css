@@ -1,0 +1,99 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  #title{
+    font-size: 50px;
+    margin-top: -10px;
+    
+  }
+
+.img-container {
+    height: 200px; /* 원하는 높이 설정 */
+}
+.img-container img {
+    object-fit: cover; /* 이미지가 컨테이너에 맞게 조정되도록 설정 */
+    width: 100%; /* 너비를 100%로 설정 */
+    height: 100%; /* 높이를 100%로 설정 */
+}
+
+.loginup {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .loginup:hover {
+    text-decoration: underline;
+  }
+  
+  .nav-item {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+  }
+  .nav-item:hover .dropdown-menu {
+    display: block;
+    border: 1px solid #ffc107;
+    float: left;
+    background-color: white;
+  }
+  .dropdown-item {
+    list-style: none; /* 리스트 스타일 제거 */
+    margin: 0; /* 기본 마진 제거 */
+    padding: 0; /* 기본 패딩 제거 */
+  }
+  
+  .dropdown-item a {
+    display: block; /* a 태그를 블록 요소로 변경 */
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px; /* a 태그의 크기를 조정 */
+    width: 100%; /* a 태그가 li 태그의 전체 너비를 차지 */
+    box-sizing: border-box; /* 패딩을 포함한 박스 크기 설정 */
+  }
+  
+  .dropdown-item a:hover,
+  .dropdown-item a:active {
+    color: #ffc107;
+    background-color: white;
+  }
+  .nav-item:hover > a {
+    background-color: white;
+    border-radius: 30px 30px 0px 0px;
+    color: #ffc107;
+  }
+  
+  .bagel-fat-one-regular {
+    font-family: "Bagel Fat One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .noto-sans-kr-500 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .noto-sans-kr{
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .jua-regular {
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+  .nav-link {
+    color: white;
+  }
+
