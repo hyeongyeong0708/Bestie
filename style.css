@@ -1,0 +1,310 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#title{
+  font-size: 50px;
+  margin-top: -10px;
+  
+}
+
+#ag {
+border-radius: 30px;
+}
+
+
+
+.info_img_height{
+  height: 400px;
+  
+}
+
+.info_button_rel{
+position: relative;
+}
+
+.info_button {
+position: absolute;
+bottom: 20px; /* 이미지 아래에서 20px 위로 */
+left: 50%;
+transform: translateX(-50%);
+padding: 10px 20px;
+background-color: #ffc107;
+border: 2px solid #ffc107;
+cursor: pointer;
+display: inline-block; /* 블록 요소로 변경 */
+text-align: center; /* 텍스트를 중앙 정렬 */
+text-decoration: none; /* 링크의 기본 텍스트 장식 제거 */
+color: black; /* 기본 텍스트 색상 */
+}
+
+.info_button:hover {
+background-color: white;
+color: #ffc107;
+}
+
+
+.loginup {
+  color: black;
+  text-decoration: none;
+}
+
+.loginup:hover {
+  text-decoration: underline;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+}
+.nav-item:hover .dropdown-menu {
+  display: block;
+  border: 1px solid #ffc107;
+  float: left;
+  background-color: white;
+}
+.dropdown-item {
+  list-style: none; /* 리스트 스타일 제거 */
+  margin: 0; /* 기본 마진 제거 */
+  padding: 0; /* 기본 패딩 제거 */
+}
+
+.dropdown-item a {
+  display: block; /* a 태그를 블록 요소로 변경 */
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px; /* a 태그의 크기를 조정 */
+  width: 100%; /* a 태그가 li 태그의 전체 너비를 차지 */
+  box-sizing: border-box; /* 패딩을 포함한 박스 크기 설정 */
+}
+
+.dropdown-item a:hover,
+.dropdown-item a:active {
+  color: #ffc107;
+  background-color: white;
+}
+.nav-item:hover > a {
+  background-color: white;
+  border-radius: 30px 30px 0px 0px;
+  color: #ffc107;
+}
+
+.bagel-fat-one-regular {
+  font-family: "Bagel Fat One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.noto-sans-kr-500 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.noto-sans-kr{
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.jua-regular {
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.nav-link {
+  color: white;
+}
+
+.article {
+  height: 230px;
+  text-align:middle;
+}
+.article_font {
+  font-size:40px;
+}
+.post-image {
+  height: 230px;
+}
+
+.profile-image{
+  height: 50px;
+}
+
+.button:hover,
+.button:active {
+    background-color: white;
+    color: #ffc107;
+    border: 1px solid #ffc107;
+    cursor: pointer;
+}
+
+.button {
+    text-decoration: none;
+    color: black;
+    background-color: #ffc107;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #ffc107;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button_loginup {
+  text-decoration: none;
+  color: white;
+  background-color: #ffc107;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #ffc107;
+  border-radius: 50%;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button_loginup:hover,
+.button_loginup:active {
+    background-color: white;
+    color: #ffc107;
+    border: 1px solid #ffc107;
+    cursor: pointer;
+}
+
+
+
+.wide-button {
+  width: 100%; /* 버튼의 너비를 100%로 설정하여 컨테이너 전체 너비를 차지하도록 합니다. */
+  
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container:hover .img-fluid {
+  filter: brightness(50%);
+}
+
+.image-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  color: white;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .image-caption {
+  opacity: 1;
+}
+
+.soge {
+  width: 45%;
+}
+#source {
+  font-size: 13px;
+}
+
+.nondeco{
+  text-decoration: none;
+}
+
+.img-container {
+  height: 200px; /* 원하는 높이 설정 */
+}
+.img-container img {
+  object-fit: cover; /* 이미지가 컨테이너에 맞게 조정되도록 설정 */
+  width: 100%; /* 너비를 100%로 설정 */
+  height: 100%; /* 높이를 100%로 설정 */
+}
+
+.img-container:hover img {
+  transform: scale(1.1); /* 이미지를 1.1배 확대 */
+  transition: transform 0.3s ease; /* 부드러운 전환 효과 적용 */
+}
+
+
+.btn-close-custom {
+  background-color: white;
+  color: #ffc107;
+  border: 1px solid white;
+  border-radius: 50%; /* 원형으로 만들기 */
+  font-size: 1.25rem;
+  width: 2rem; /* 버튼의 너비와 높이를 동일하게 설정 */
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+}
+.btn-close-custom:hover {
+  background-color: #ffc107;
+  color: white;
+  border: 1px solid #ffc107;
+}
+
+.custom-border-top-bottom {
+  border-top: 2px solid #ffc107 !important; /* Bootstrap warning color */
+  border-bottom: 2px solid #ffc107 !important; /* Bootstrap warning color */
+}
+.text-center {
+  text-align: center;
+}
+.hover-underline a {
+  text-decoration: none;
+  color: inherit;
+}
+.hover-underline a:hover {
+  text-decoration: underline;
+}
+
+.custom-image {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+}
+.promo-text {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.step {
+    text-align: center;
+    width: 30%;
+}
+
+[type="radio"] {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+ 
+  border: 2px solid #ffc107;
+  border-radius: 50%;
+ 
+}
+
+[type="radio"]:checked {
+
+  border: 2px solid #ffc107;
+  background-color: black;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+
